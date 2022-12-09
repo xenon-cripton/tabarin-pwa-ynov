@@ -11,5 +11,10 @@
     "javascriptreact",
     "typescript",
     "vue"
-  ]
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.run": "onSave",
+  "eslint.alwaysShowStatus": true
 }

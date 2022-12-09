@@ -7,14 +7,20 @@ const routes = [
     ]
   },
   {
-    path: '/tuto',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: 'v2', component: () => import('pages/TutoPage.vue') },
-      {
-        path: 'v3', component: () => import('pages/TutoPageVue3.vue')
-      }
-    ]
+    path: '/lists',
+    component: () => import('pages/ListDetailPage.vue')
+  },
+  {
+    path: '/create-task',
+    component: () => import('pages/CreateTaskPage.vue')
+  },
+  {
+    path: '/tasks',
+    component: () => import('pages/TaskDetailPage.vue')
+  },
+  {
+    path: '/tasks/update',
+    component: () => import('pages/UpdateTaskPage.vue')
   },
   {
     path: '/:catchAll(.*)*',

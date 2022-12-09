@@ -6,6 +6,10 @@ import cors from '@koa/cors'
 import { API_V1_ROUTER } from '#routes/index.js'
 import serve from 'koa-static'
 
+import { config } from 'dotenv'
+
+config()
+
 const app = new Koa()
 
 app
